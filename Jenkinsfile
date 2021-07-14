@@ -26,12 +26,6 @@ pipeline
             }
         }
 
-        stage('archive'){
-            steps{
-                echo 'this is the ARCHIVE job'
-                archiveArtifacts '**/target/*.jar'
-            }
-        }
     }
     
     post{
