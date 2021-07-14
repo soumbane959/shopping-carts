@@ -26,6 +26,12 @@ pipeline
             }
         }
 
+        stage('archive'){
+            steps{
+                echo 'this is the MAVEN ARCHIVE job'
+                archiveArtifacts '**/target/*.jar'
+            }
+        }
     }
     
     post{
