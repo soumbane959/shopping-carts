@@ -29,7 +29,7 @@ pipeline
         stage('archive'){
             steps{
                 echo 'this is the ARCHIVE job'
-                sh 'archiveArtifacts "**/target/*.jar"'
+                archiveArtifacts '**/target/*.jar'
             }
         }
     }
